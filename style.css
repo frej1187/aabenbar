@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+
+}
+
+body {
+    margin: 0 auto;
+    background-color: #bfbabe;
+
+}
+
+section,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-color: black;
+    background-color: #1F2532;
+
+}
+
+
+#top_page .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#menu .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#events .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#om .sectionwrapper {
+    background-color: #1F2532;
+}
