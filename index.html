@@ -10,14 +10,61 @@
 </head>
 
 <body>
-    <nav>
-        <header>
-            <a href="top_page">#forside</a>
-            <a href="#menu">Menu</a>
-            <a href="#events">Events</a>
-            <a href="#om">om aabenbar</a>
-        </header>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+            <input type="checkbox" />
+
+            <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+            <ul id="menu">
+                <li> <a href="#">
+                        Home
+                    </a></li>
+                <li> <a href="#">
+                        About
+                    </a></li>
+                <li> <a href="#">
+                        Info
+                    </a></li>
+                <li> <a href="#">
+                        Contact
+                    </a></li>
+            </ul>
+        </div>
+
+        <ul id="menu2">
+
+            <a href="#">
+                Home
+            </a>
+            <a href="#">
+                About
+            </a>
+            <a href="#">
+                Info
+            </a>
+            <a href="#">
+                Contact
+            </a>
+        </ul>
+
     </nav>
+
     <section id="top_page">
         <div class="sectionwrapper">
             <div class="baggrundsbillede">
@@ -59,4 +106,6 @@
     <script src=""></script>
     <footer>
     </footer>
-</body></html>
+</body>
+
+</html>
