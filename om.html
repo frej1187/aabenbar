@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lora|Raleway|Tangerine" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="top">
+        <div class="forsideBillede">
+
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                    <input type="checkbox" />
+                    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                    <ul id="menu">
+                        <li> <a href="index.html">
+                                Forside
+                            </a></li>
+                        <li> <a href="menu.html">
+                                Menu
+                            </a></li>
+                        <li> <a href="events.html">
+                                Events
+                            </a></li>
+                        <li> <a href="om.html">
+                                om
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="logo2">
+                    <div class="navi">
+                        <ul id="menu2">
+                            <a href="index.html">
+                                Forside
+                            </a>
+                            <a href="menu.html">
+                                Menu
+                            </a>
+                            <a href="events.html">
+                                Events
+                            </a>
+                            <a href="om.html">
+                                Om
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <section id="top_page">
+                <div id="video-container">
+                    <!-- Video -->
+                    <video id="video" width="640" height="365">
+                        <source src="Video/aabenbar.mp4" type="video/mp4">
+                        <p>
+                            Your browser doesn't support HTML5 video.
+                            <a href="Video/aabenbar.mp4">Download</a> the video instead.
+                        </p>
+                    </video>
+                    <!-- Video Controls -->
+                    <div id="video-controls">
+                        <button type="button" id="play-pause">Play</button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="mute">Mute</button>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        <button type="button" id="full-screen">Full-Screen</button>
+                    </div>
+                </div>
+            </section>
+            <script src="scriptfilm.js"></script>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

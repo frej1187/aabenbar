@@ -2,8 +2,16 @@
     box-sizing: border-box;
 }
 
+
+/* fonts
+font-family: 'Raleway', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Lora', serif;
+ */
 html {
     font-size: 62.5%;
+
 }
 
 img {
@@ -17,27 +25,105 @@ body {
     margin: 0 auto;
     background-color: #bfbabe;
 
+
 }
 
 section,
 footer {
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid black;
     border-color: black;
-    background-color: #1F2532;
+}
+
+
+
+/* Alt med video */
+#play-pause {
+    color: red;
+    background-color: #1c1c1c;
+    border-radius: 40px;
+    height: 40px;
+    width: 90px;
+    text-transform: uppercase;
+    text-shadow: 2px 2.1px 3px #d04f20;
+    font-size: 15px;
+
 
 }
 
-#top_page .sectionwrapper {
+
+#mute {
+    color: red;
+    background-color: #1c1c1c;
+    border-radius: 40px;
+    height: 40px;
+    width: 100px;
+    text-transform: uppercase;
+    text-shadow: 2px 2.1px 3px #d04f20;
+    font-size: 15px;
+}
+
+
+#full-screen {
+    color: red;
+    background-color: #1c1c1c;
+    border-radius: 40px;
+    height: 50px;
+    width: 100px;
+    text-transform: uppercase;
+    text-shadow: 2px 2.1px 3px #d04f20;
+    font-size: 15px;
+}
+
+nav {
+    top: 0;
+}
+
+#spilstruktur .sectionwrapper {
+    background-color: #1F2532;
+    display: flex;
+}
+
+
+//*Forside*//
+#top_page .sectionwrapper {}
+
+#top_page .container {
+    margin: 4rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+top_page.col {
+
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*#top_page .container {
+    margin-top: 6rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    margin-bottom: 20rem;
+    background-color: white;
+    color: white;
+    width: 80vwx;
+    height: 20vw;
+    overflow: visible;
+    justify-content: center;
+    opacity: 0.;
+    border: 3px solid black;
+}*/
+
+
+#middle_page .sectionwrapper {
     background-color: #1F2532;
 }
 
-#menu .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#events .sectionwrapper {
+#bottom_page .sectionwrapper {
     background-color: #1F2532;
 }
 
@@ -45,6 +131,97 @@ footer {
     background-color: #1F2532;
 }
 
+
+//*Menuer *//
+
+#oel .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#cocktails .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#kaffe .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#mad .sectionwrapper {
+    background-color: #1F2532;
+}
+
+//*Events*//
+
+#events_top_page .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#events_middle_page .sectionwrapper {
+    background-color: #1F2532;
+}
+
+
+
+//* store billeder *//
+
+.aabenCover {}
+
+.logo2 {
+    width: 100%;
+    background-image: url(logoer/%C3%85benbar%20Navn.png);
+    background-size: 60%;
+    width: 100vw;
+    height: 16.25vw;
+    justify-content: center;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    top: 0;
+
+
+}
+
+/*#middle_page .baggrundsbillede {
+    width: 100%;
+    background-image: url(billeder/store/bar_1.jpg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    top: -0%;
+    overflow: hidden;
+}*/
+p {
+    font-size: 2rem;
+    color: red;
+}
+
+#top .forsideBillede {
+
+    background-image: url(billeder/store/bar_1.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+
+
+
+
+
+
+/*
+
+
+Alt med menuer
+*/
 
 a {
     text-decoration: none;
@@ -77,20 +254,37 @@ body {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
+
+
+
+}
+
+.navi ul {
+    text-align: center;
+    padding-left: 10rem;
+
+
 }
 
 
+#menu2 a {
+    justify-content: space-between;
+    color: #fbdee7;
+    border: 0px solid white;
+    padding: 2rem;
+    position: relative;
+    align-self: center;
+    font-size: 2.5rem;
 
-
-#menu2 {
-    color: white;
-    border: 1px solid white;
-    padding: 1rem;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    top: 19rem;
+    font-family: 'Lora', serif;
 }
-
 
 #menu2 a:hover {
-    color: tomato;
+    color: #f3105b;
 }
 
 
@@ -170,7 +364,7 @@ a:hover {
     background: #232323;
 }
 
-/*
+/*u
  * Gemmer den midterste
  */
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -202,7 +396,7 @@ a:hover {
 
     background: #ededed;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
+
     /* to stop flickering of text in safari */
 
     transform-origin: 0% 0%;
@@ -229,6 +423,7 @@ a:hover {
 
 
 
+/*
 @media only screen and (min-width: 600px) {
     #menuToggle {
         display: none;
@@ -256,3 +451,4 @@ a:hover {
         opacity: 1;
     }
 }
+*/
